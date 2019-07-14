@@ -1,4 +1,4 @@
-baseURL = "http://ntcir.datasearch.jp/"
+baseURL = "https://ntcir.datasearch.jp/"
 languageCode = "en-us"
 title = "NTCIR-15 Data Search"
 theme = "hugo-theme-bootstrap4-blog"
