@@ -18,22 +18,22 @@ theme = "hugo-theme-bootstrap4-blog"
 
 [[menu.navbar]]
   name = "Task"
-  url = "/task/"
+  url = "#task"
   weight = 1
 
 [[menu.navbar]]
   name = "Data"
-  url = "/data/"
+  url = "#data"
   weight = 2
 
 [[menu.navbar]]
   name = "Evaluation"
-  url = "/evaluation/"
+  url = "#evaluation"
   weight = 3
 
 [[menu.navbar]]
   name = "Organizers"
-  url = "/organizers/"
+  url = "#organizers"
   weight = 4
 
 [params]
