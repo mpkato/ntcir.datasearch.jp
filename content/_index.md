@@ -60,12 +60,18 @@ Examples of data sets are shown below.
 
 ```
 {
-    "domain": "www.e-stat.go.jp",
-    "dataurl": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031519435&fileKind=0",
-    "title": "地方公共団体の議会の議員及び長の所属党派別人員調 地方公共団体の議会の議員及び長の所属党派別人員調等（H20.12.31現在） 選挙執行件数 | ファイルから探す | 統計データを探す | 政府統計の総合窓口",
+    "id": "000031519435",
     "url": "https://www.e-stat.go.jp/stat-search/files?page=1&toukei=00200231&result_page=1&layout=dataset&stat_infid=000031519435",
-    "timestamp": "2018/09/05 08:23:05",
-    "subtitle": "地方公共団体の議会の議員及び長の所属党派別人員調 / 地方公共団体の議会の議員及び長の所属党派別人員調等（H20.12.31現在）",
+    "attribution": "出典：政府統計の総合窓口(e-Stat)（https://www.e-stat.go.jp/）",
+    "title": "地方公共団体の議会の議員及び長の所属党派別人員調 地方公共団体の議会の議員及び長の所属党派別人員調等（H20.12.31現在） 選挙執行件数 | ファイルから探す | 統計データを探す | 政府統計の総合窓口",
+    "description": "地方公共団体の議会の議員及び長の所属党派別人員調 / 地方公共団体の議会の議員及び長の所属党派別人員調等（H20.12.31現在）",
+    "data": [
+        {
+            "data_format": "xls",
+            "data_url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031519435&fileKind=0",
+            "data_filename": "a0abc17d8ce4715933c69132418dc7337e76c5aad06beb9f5d69b0f1c1870ff9-05%E9%81%B8%E6%8C%99%E5%9F%B7%E8%A1%8C%E4%BB%B6%E6%95%B0%E8%AA%BF.xls"
+        }
+    ],
     "data_fields": {
         "提供統計名": "地方公共団体の議会の議員及び長の所属党派別人員調等（H20.12.31現在）",
         "統計表名": "選挙執行件数",
@@ -74,23 +80,43 @@ Examples of data sets are shown below.
         "政府統計名": "地方公共団体の議会の議員及び長の所属党派別人員調",
         "公開年月日時分": "2017-01-06 11:34",
         "集計地域区分": "該当なし"
-    },
-    "id": "000031519435",
-    "filename": ["a0abc17d8ce4715933c69132418dc7337e76c5aad06beb9f5d69b0f1c1870ff9-05%E9%81%B8%E6%8C%99%E5%9F%B7%E8%A1%8C%E4%BB%B6%E6%95%B0%E8%AA%BF.xls"]
+    }
 }
 ```
 
 **SAMPLE (English)**
 
 ```
-{
-    ... (Released later) ...
+{                                                                                                                                                          
+    "id": "0063664a-d0d7-4ce2-9462-0463a89fc274",
+    "url": "https://catalog.data.gov/dataset/0063664a-d0d7-4ce2-9462-0463a89fc274",
+    "attribution": "CRED REA Fish Team Stationary Point Count Surveys at Sarigan, Marianas Archipelago, 2005 (https://catalog.data.gov/dataset/0063664a-d0d7-4ce2-9462-0463a89fc274) is licensed under U.S. Government Work (http://www.usa.gov/publicdomain/label/1.0/)"
+    "title": "CRED REA Fish Team Stationary Point Count Surveys at Sarigan, Marianas Archipelago, 2005",
+    "description": "Stationary Point Counts at 4 stations at each survey site were surveyed as part of Rapid Ecological Assessments (REA) conducted at 3 sites around Sarigan in the Marianas Archipelago (MA) during 3 September - 1 October 2005 in the NOAA Oscar Elton Sette (OES 0511) Reef Assessment and Monitoring Program (RAMP) Cruise. Raw survey data included species level abundance estimates.",
+    "data": [
+        {
+            "data_format": "excel",
+            "data_organization": "National Oceanic and Atmospheric Administration, Department of Commerce",
+            "data_url": "https://data.nodc.noaa.gov/coris/data/NOAA/nmfs/pifsc/cred/REAFish/CNMI_2005/CRED_REA_FISH_SAIPAN_2005.xls",
+            "data_filename": "076342d026a0feec762ce5cb18e047db61e24db557958f75ca7aaa668b5e1342-CNMI_2005/CRED_REA_FISH_SAIPAN_2005.xls"
+        }
+    ],
+    "data_fields": {
+        "Resource Type": "Dataset",
+        "Metadata Date": "June 20, 2018",
+        "Metadata Created Date": "February 7, 2018",
+        "Metadata Updated Date": "February 27, 2019",
+        ...
+        "metadata_sources": [
+            "https://catalog.data.gov/harvest/object/fc5a39b7-4c9f-49b8-af95-2812d9b3264c"
+        ]
+    }
 }
 ```
 
 The metadata of data sets will be provided by a single JSON file,
 while the statistical data are stored as individual files.
-As seen in the examples, the "filename" field indicate statistical data contained in the data set.
+As seen in the examples, the "data" field indicate statistical data contained in the data set.
 
 Note that e-Stat releases their contents under a license compatible with [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/),
 and Data.gov releases many of their data as [U.S. Government Works](https://www.usa.gov/government-works) or under [CC0 1.0 Universal (CC0 1.0)
