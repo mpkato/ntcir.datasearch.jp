@@ -12,8 +12,7 @@
   {{- /* Google recommends the headline be no more than 110 characters */}}
   "headline": "{{ substr .Title 0 110 }}",
   "url": "{{ printf "%s" .Permalink }}",
-  "wordCount": "{{ .WordCount }}",
-  {{- $ISO8601 := "2006-01-02T15:04:05-07:00" }}
+  {{- $ISO8601 := "2006-01-02T15:04:05" }}
   {{- if not .PublishDate.IsZero }}
   "datePublished": {{ .PublishDate.Format $ISO8601 }},
   {{- else }}
