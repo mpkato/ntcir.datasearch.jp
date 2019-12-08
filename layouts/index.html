@@ -3,3 +3,42 @@
     {{.}}
   {{ end }}
 {{ end }}
+
+{{ define "schema-dot-org" }}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  {{- /* Google recommends the headline be no more than 110 characters */}}
+  "headline": "{{ substr .Title 0 110 }}",
+  "url": "{{ printf "%s" .Permalink }}",
+  "wordCount": "{{ .WordCount }}",
+  {{- $ISO8601 := "2006-01-02T15:04:05-07:00" }}
+  {{- if not .PublishDate.IsZero }}
+  "datePublished": {{ .PublishDate.Format $ISO8601 }},
+  {{- else }}
+  "datePublished": {{ .Date.Format $ISO8601 }},
+  {{- end }}
+  {{- if not .Lastmod.IsZero }}
+  "dateModified": {{ .Lastmod.Format $ISO8601 }},
+  {{- end }}
+  {{- with .Site.Social.GooglePlus }}
+  "publisher": "{{ printf "%s" . }}",
+  {{- end }}
+  "author": {
+    "@type": "Organization",
+    "name": "{{ .Params.author | default .Site.Params.author }}"
+  }
+  {{- if or (.Params.keywords) (or (.Params.categories) (.Params.tags)) -}}
+  ,
+  "keywords": "{{ delimit (union .Params.keywords (union .Params.categories .Params.tags)) ", " }}"
+  {{- end }}
+
+  {{- with .Params.description -}}
+  ,
+  "description": "{{ . }}"
+  {{- end }}
+}
+</script>
+
+{{ end }}

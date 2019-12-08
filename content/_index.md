@@ -1,6 +1,8 @@
 ---
-title: 'Introduction'
-date: 2019-07-13T22:26:38+09:00
+title: 'NTCIR-15 Data Search'
+description: 'A shared task on ad-hoc retrieval for governmental statistical data'
+keywords: ['ntcir', 'ir', 'information retrieval', 'dataset', 'test collection']
+date: 2019-12-07T22:26:38+09:00
 ---
 
 NTCIR-15 Data Search is a shared task on ad-hoc retrieval for governmental
