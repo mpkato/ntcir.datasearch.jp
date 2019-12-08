@@ -22,6 +22,15 @@ and one published by the US government ([Data.gov](https://data.gov/)).
 | **Jun 12, 2020** --- | Run submission due                   |
 | **Aug 20, 2020** --- | Evaluation results released          |
 
+<div style="height: 1em"></div>
+
+## Registration
+
+Please visit http://research.nii.ac.jp/ntcir/ntcir-15/howto.html,
+and take a look at *What participants must do*.
+Then, go to http://ntcir.nii.ac.jp/NTCIR15Regist/ for registration.
+After your registration, you may access to the test collection of Data Search.
+
 ---
 
 # Task
