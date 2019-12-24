@@ -37,7 +37,7 @@ After your registration, you may access to the test collection of Data Search.
 
 <a name="task"></a>
 
-We will provide queries and a data collection.
+We will provide queries and data collections.
 Participants' systems are expected to generate a ranked list of statistical data _sets_ for each query.
 The ranked lists will be evaluated in a similar way to traditional ad-hoc retrieval tasks.
 
