@@ -24,7 +24,7 @@ and one published by the US government ([Data.gov](https://data.gov/)).
 |                      |                                      |
 | -------------------- | ------------------------------------ |
 | **Feb 29, 2020** --- | Data collection and queries released |
-|                      | <span class="markerline">[Released on Feb 29, 2020](#data)</span> |
+|                      | - <span class="markerline">[Released on Feb 29, 2020](#data)</span> |
 | **Apr 30, 2020** --- | Registration due                     |
 | **Jun 12, 2020** --- | Run submission due                   |
 | **Aug 20, 2020** --- | Evaluation results released          |
