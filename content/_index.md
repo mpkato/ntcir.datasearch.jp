@@ -5,6 +5,12 @@ keywords: ['ntcir', 'ir', 'information retrieval', 'dataset', 'test collection']
 date: 2019-12-07T22:26:38+09:00
 ---
 
+<style type="text/css">
+.markerline {
+    background: linear-gradient(transparent 80%, #ffffa8 80%);
+}
+</style>
+
 NTCIR-15 Data Search is a shared task on ad-hoc retrieval for governmental
 statistical data. The first round of Data Search focuses on the retrieval of
 a statistical data collection published by the Japanese government
@@ -18,6 +24,7 @@ and one published by the US government ([Data.gov](https://data.gov/)).
 |                      |                                      |
 | -------------------- | ------------------------------------ |
 | **Feb 29, 2020** --- | Data collection and queries released |
+|                      | <span class="markerline">[Released on Feb 29, 2020](#data)</span> |
 | **Apr 30, 2020** --- | Registration due                     |
 | **Jun 12, 2020** --- | Run submission due                   |
 | **Aug 20, 2020** --- | Evaluation results released          |
@@ -194,22 +201,88 @@ Thus, search systems cannot access to the topics for which queries are generated
 
 <a name="data"></a>
 
-## Training Data
+All the data are available at [NTCIR-15 Data Search Test Collection](https://drive.google.com/drive/folders/1H2Rt4hlH89h2aycuHJGUJIyKKbbofVGF) (see README.md).
+Relevance judgments for training queries will be available later.
 
-We plan to distribute around over 100 queries as training queries,
-for which relevance judgments will be also available.
 
-## Test Data
+# Submission
 
-We plan to distribute around over 100 queries as test queries,
-for which participants are expected to produce ranked lists of data sets.
+<a name="submission"></a>
+
+Each team is allowed to submit up to 10 runs.
+Runs should be generated automatically.
+
+## Run file name
+
+Please submit a single file whose name should be the form of `[GROUP_ID].zip`.
+`[GROUP_ID]` should be replaced with the group ID you decided at the NTCIR registration. 
+For example, if you group ID is `TOKYO`, then the file name must be `TOKYO.zip`.
+
+The single zip file `[GROUP_ID].zip` can contain up to 10 run files.
+Each run file should be named as follows:
+
+`[GROUP_ID]-[LANGUAGE]-[PRIORITY]`
+
+where
+
+- `[GROUP_ID]` is your group ID.
+- `[LANGUAGE]` is either `J` (Japanese subtask) or `E` (English subtask).
+- `[PRIORITY]` is an integer between 1 and 10, indicating which runs should be prioritized in the pooling for relevance assessments.
+
+e.g. `TOKYO-E-1` or `TOKYO-J-10`
+
+Run file names should NOT have any suffix such as `.txt` or `.run`.
+
+## Run file format
+
+The format is the same as those used in the NTCIR WWW tasks. 
+
+The first line of the run file should describe your ranking algorithm,
+which may be used when the organizers report participants' results:
+
+`<SYSDESC>[REPLACE_ME]</SYSDESC>`
+
+e.g. `<SYSDESC>BM25 and BERT<SYSDESC>`
+
+The other lines in the file should be of the form:
+
+`[TOPIC_ID] 0 [DATASET_ID] [RANK] [SCORE] [RUN_NAME]`
+
+e.g.
+```
+DS-J-1001 0 000031519435 1 7.3 TOKYO-J-2
+DS-J-1001 0 000031519438 2 3.5 TOKYO-J-2
+...
+```
+
+where each field should be separated by a whitespace, and
+
+- `[TOPIC_ID]` is the ID of a query for which data sets were retrieved.
+- `[DATASET_ID]` is the ID of a data set retrieved for the query.
+- `[RANK]` is the rank of the data set, which should start from 1.
+- `[SCORE]` is the score of the data set.
+- `[RUN_NAME]` should be exactly the same as the run file name.
+
+Note that the run files should contain the results 
+for all the **test queries**, not for any training queries.
+Also note that `[RANK]` and `[SCORE]` fileds are not used in the evaluation:
+only the order of `[DATASET_ID]` in the run file is used when effectiveness measures are computed.
+
+## Submission Form
+
+Registered teams can upload their runs at [NTCIR-15 Data Search Submission Form](https://forms.gle/fdTuHRCc9NZvfDLX9).
+Please submit a single zip file `[GROUP_ID].zip` that contains up to 10 run files.
+Although you can submit runs multiple times,
+only the latest submission is accepted as the official submission from your team.
+Note that any submissions from non-registered teams or those after the deadline will be ignored.
+
 
 # Evaluation
 
 <a name="evaluation"></a>
 
-Submitted system results (called _runs_) will be evaluated in terms of effectiveness metrics
-including nDCG (normalized discounted cumulative gain), ERR (expected reciprocal rank), and Q-measure.
+Runs will be evaluated in terms of effectiveness metrics
+including nDCG (normalized discounted cumulative gain), nERR (normalized expected reciprocal rank), and Q-measure.
 
 We will conducted relevance judgments by using crowd-sourcing services.
 The relevance of each data will be evaluated at a three point scale: irrelevant, partially relevant, and highly relevant.
