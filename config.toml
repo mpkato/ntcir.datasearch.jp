@@ -22,7 +22,7 @@ theme = "hugo-theme-bootstrap4-blog"
   weight = 1
 
 [[menu.navbar]]
-  name = "Data"
+  name = "Data & Tool"
   url = "#data"
   weight = 2
 

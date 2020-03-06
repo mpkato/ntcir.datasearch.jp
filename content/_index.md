@@ -9,6 +9,13 @@ date: 2019-12-07T22:26:38+09:00
 .markerline {
     background: linear-gradient(transparent 80%, #ffffa8 80%);
 }
+table {
+    width: 100%;
+}
+td {
+    vertical-align: top;
+    padding: 0.25em 0;
+}
 </style>
 
 NTCIR-15 Data Search is a shared task on ad-hoc retrieval for governmental
@@ -21,13 +28,12 @@ and one published by the US government ([Data.gov](https://data.gov/)).
 
 ## Schedule
 
-|                      |                                      |
-| -------------------- | ------------------------------------ |
-| **Feb 29, 2020** --- | Data collection and queries released |
-|                      | - <span class="markerline">[Released on Feb 29, 2020](#data)</span> |
-| **Apr 30, 2020** --- | Registration due                     |
-| **Jun 12, 2020** --- | Run submission due                   |
-| **Aug 20, 2020** --- | Evaluation results released          |
+|                  |                                      |
+| ---------------- | ------------------------------------ |
+| **Feb 29, 2020** | Data collection and queries released<br> - <span class="markerline">[Released on Feb 29, 2020](#data)</span> |
+| **Apr 30, 2020** | Registration due                     |
+| **Jun 12, 2020** | Run submission due                   |
+| **Aug 20, 2020** | Evaluation results released          |
 
 <div style="height: 1em"></div>
 
@@ -197,12 +203,35 @@ This query generation task is conducted in both Japanese and English, in separat
 Note that data distributed to participants include only queries but not their topics.
 Thus, search systems cannot access to the topics for which queries are generated.
 
-# Data
+# Data & Tool
 
 <a name="data"></a>
 
+## Data
+
 All the data are available at [NTCIR-15 Data Search Test Collection](https://drive.google.com/drive/folders/1H2Rt4hlH89h2aycuHJGUJIyKKbbofVGF) (see README.md).
 Relevance judgments for training queries will be available later.
+
+<br>
+
+Test collection statistics
+
+|                               |             |
+| ----------------------------- | ----------: |
+| **Japanese Collection**       | 1,338,402   |
+| **Japanese Training Queries** | 96          | 
+| **Japanese Test Queries**     | 96          | 
+| **English Collection**        | 46,615      |
+| **English Training Queries**  | 96          | 
+| **English Test Queries**      | 96          | 
+
+<br>
+
+## Tool
+
+A tool for producing baseline runs.
+<div class="github-card" data-github="mpkato/ntcir-datasearch" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 
 # Submission
