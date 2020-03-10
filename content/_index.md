@@ -26,6 +26,10 @@ and one published by the US government ([Data.gov](https://data.gov/)).
 
 ---
 
+## Contact
+data-search-org@googlegroups.com or [@NTCIRDataSearch](https://twitter.com/NTCIRDataSearch) 
+
+
 ## Schedule
 
 |                  |                                      |
