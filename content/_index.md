@@ -215,7 +215,7 @@ Thus, search systems cannot access to the topics for which queries are generated
 
 ## Data
 
-All the data are available at [NTCIR-15 Data Search Test Collection](https://drive.google.com/drive/folders/1H2Rt4hlH89h2aycuHJGUJIyKKbbofVGF) (see README.md).
+All the data are available at [NTCIR-15 Data Search Test Collection](/data/) (see README.md).
 Relevance judgments for training queries will be available later.
 
 <br>
