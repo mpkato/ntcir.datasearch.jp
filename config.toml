@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "NTCIR-15 Data Search"
 theme = "hugo-theme-bootstrap4-blog"
 
+googleAnalytics = "UA-160178913-1"
+
+
 [markup.goldmark.renderer]
   unsafe= true
 
