@@ -42,7 +42,7 @@ and one published by the US government ([Data.gov](https://data.gov/)).
 Please visit http://research.nii.ac.jp/ntcir/ntcir-15/howto.html,
 and take a look at *What participants must do*.
 Then, go to http://ntcir.nii.ac.jp/NTCIR15Regist/ for registration.
-After your registration, you may access to the test collection of Data Search.
+The registration is necessary for participants to submit their runs.
 
 ---
 
@@ -50,7 +50,7 @@ After your registration, you may access to the test collection of Data Search.
 
 <a name="task"></a>
 
-We will provide queries and data collections.
+We provide queries and data collections.
 Participants' systems are expected to generate a ranked list of statistical data _sets_ for each query.
 The ranked lists will be evaluated in a similar way to traditional ad-hoc retrieval tasks.
 
@@ -140,7 +140,7 @@ Examples of data sets are shown below.
 
 The metadata of data sets will be provided by a single JSON file,
 while the statistical data are stored as individual files.
-As seen in the examples, the "data" field indicate statistical data contained in the data set.
+As seen in the examples, the `data` field indicate statistical data contained in the data set.
 
 Note that e-Stat releases their contents under a license compatible with [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/),
 and Data.gov releases many of their data as [U.S. Government Works](https://www.usa.gov/government-works) or under [CC0 1.0 Universal (CC0 1.0)
@@ -180,9 +180,9 @@ For example, `What is the population in Tokyo?` can be translated into
 
 Since it is not obvious how topics can be transformed to queries,
 and we are also interested in query formulation for data search,
-we gather queries for data search by using a crowd-sourcing service.
-Workers are given a topic and asked to input a query for data search.
-This query generation task is conducted in both Japanese and English, in separate tasks.
+we gathered queries for data search by using a crowd-sourcing service.
+Ten workers were given a topic and asked to input a query per topic for data search.
+This query generation task was conducted in both Japanese and English, in separate tasks.
 
 **SAMPLE (Japanese)**
 
@@ -200,6 +200,8 @@ This query generation task is conducted in both Japanese and English, in separat
 3. states average commute time comparison information
 ```
 
+We built a unigram language model for each topic based on ten generated queries,
+and selected a query per topic with the lowest perplexity with respect to the language model.
 Note that data distributed to participants include only queries but not their topics.
 Thus, search systems cannot access to the topics for which queries are generated.
 
@@ -214,24 +216,24 @@ Relevance judgments for training queries will be available later.
 
 <br>
 
-Test collection statistics
+### Test collection statistics
 
-|                               |             |
-| ----------------------------- | ----------: |
-| **Japanese Collection**       | 1,338,402   |
-| **Japanese Training Queries** | 96          | 
-| **Japanese Test Queries**     | 96          | 
-| **English Collection**        | 46,615      |
-| **English Training Queries**  | 96          | 
-| **English Test Queries**      | 96          | 
+|                               |                                  |
+| ----------------------------- | -------------------------------: |
+| **Japanese Collection**       | 1,338,402 (~100GB, compressed)   |
+| **Japanese Training Queries** | 96                               |
+| **Japanese Test Queries**     | 96                               |
+| **English Collection**        | 46,615 (~445GB, compressed)      |
+| **English Training Queries**  | 96                               |
+| **English Test Queries**      | 96                               |
 
 <br>
 
 ## Tool
 
 A tool for producing baseline runs.
-<div class="github-card" data-github="mpkato/ntcir-datasearch" data-width="100%" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+[![mpkato/ntcir-datasearch - GitHub](/ntcir-datasearch.svg)](https://github.com/mpkato/ntcir-datasearch)
 
 
 # Submission
@@ -261,6 +263,8 @@ where
 e.g. `TOKYO-E-1` or `TOKYO-J-10`
 
 Run file names should NOT have any suffix such as `.txt` or `.run`.
+Note that we try, but may not be able to evaluate all the runs due to a budget constraint,
+and evaluate only runs selected by the priority.
 
 ## Run file format
 
