@@ -34,9 +34,9 @@ data-search-org@googlegroups.com or [@NTCIRDataSearch](https://twitter.com/NTCIR
 
 |                  |                                      |
 | ---------------- | ------------------------------------ |
-| **Feb 29, 2020** | Data collection and queries released<br> - <span class="markerline">[Released on Feb 29, 2020](#data)</span> |
+| **Feb 29, 2020** | Data collection and queries released<br> - <span class="markerline">[Released on Feb 29, 2020](#data)</span>|
 | **Apr 30, 2020** | Registration due                     |
-| **Jun 12, 2020** | Run submission due                   |
+| <span class="markerline">**Jul 10, 2020** (Extended)</span><br><del>**Jun 12, 2020**</del> | Run submission due                   |
 | **Aug 20, 2020** | Evaluation results released          |
 
 <div style="height: 1em"></div>
@@ -216,7 +216,7 @@ Thus, search systems cannot access to the topics for which queries are generated
 ## Data
 
 All the data are available at [NTCIR-15 Data Search Test Collection](/data/) (see README.md).
-Relevance judgments for training queries will be available later.
+Relevance judgments for training queries was also released on May 13, 2020.
 
 <br>
 
