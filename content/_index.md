@@ -304,6 +304,7 @@ Note that the run files should contain the results
 for all the **test queries**, not for any training queries.
 Also note that `[RANK]` and `[SCORE]` fileds are not used in the evaluation:
 only the order of `[DATASET_ID]` in the run file is used when effectiveness measures are computed.
+You can include up to 1,000 datasets per query.
 
 ## Submission Form
 
