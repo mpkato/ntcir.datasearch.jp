@@ -209,7 +209,7 @@ and selected a query per topic with the lowest perplexity with respect to the la
 Note that data distributed to participants include only queries but not their topics.
 Thus, search systems cannot access to the topics for which queries are generated.
 
-# Data & Tool
+# Data & Tools
 
 <a name="data"></a>
 
@@ -233,12 +233,15 @@ Relevance judgments for training queries was also released on May 13, 2020.
 
 <br>
 
-## Tool
+## Tools
 
 A tool for producing baseline runs.
 
 [![mpkato/ntcir-datasearch - GitHub](/ntcir-datasearch.svg)](https://github.com/mpkato/ntcir-datasearch)
 
+A tool for reproducing relevance judgments conducted in NTCIR-15 Data Search.
+
+[![mpkato/ntcir-datasearch-evalscripts - GitHub](/ntcir-datasearch-evalscripts.svg)](https://github.com/mpkato/ntcir-datasearch-evalscripts)
 
 # Submission
 
