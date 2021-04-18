@@ -1,6 +1,6 @@
 baseURL = "https://ntcir.datasearch.jp/"
 languageCode = "en-us"
-title = "NTCIR-15 Data Search"
+title = "NTCIR-16 Data Search 2"
 theme = "hugo-theme-bootstrap4-blog"
 
 googleAnalytics = "UA-160178913-1"
@@ -22,35 +22,61 @@ googleAnalytics = "UA-160178913-1"
 #  url = "https://example.org"
 
 [[menu.navbar]]
+  name = "IR Subtask"
+  url = "/subtasks/ir"
+  weight = 1
+
+[[menu.navbar]]
+  name = "QA Subtask"
+  url = "/subtasks/qa"
+  weight = 2
+
+[[menu.navbar]]
+  name = "UI Subtask"
+  url = "/subtasks/ui"
+  weight = 3
+
+#[[menu.navbar]]
+#  name = "Organizers"
+#  url = "#organizers"
+#  weight = 5
+
+[[menu.navbar]]
+  name = "NTCIR-15 Data Search 1"
+  url = "/data_search_1"
+  weight = 6
+
+
+[[menu.data_search_1]]
   name = "Task"
   url = "#task"
   weight = 1
 
-[[menu.navbar]]
-  name = "Data & Tool"
+[[menu.data_search_1]]
+  name = "Data & Tools"
   url = "#data"
   weight = 2
 
-[[menu.navbar]]
+[[menu.data_search_1]]
   name = "Submission"
   url = "#submission"
   weight = 3
 
-[[menu.navbar]]
+[[menu.data_search_1]]
   name = "Evaluation"
   url = "#evaluation"
   weight = 4
 
-[[menu.navbar]]
+[[menu.data_search_1]]
   name = "Organizers"
   url = "#organizers"
   weight = 5
 
 [params]
-  author = "NTCIR-15 Data Search Organizers"
+  author = "NTCIR-16 Data Search 2 Organizers"
 
   # Description/subtitle for homepage (can be Markdown)
-  description = "A shared task on ad-hoc retrieval for governmental statistical data"
+  description = "A shared task for ad-hoc dataset retrieval"
 
   # Format dates with Go's time formatting
   date_format = "Mon Jan 02, 2006"
