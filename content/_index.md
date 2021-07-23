@@ -36,7 +36,7 @@ data-search-org@googlegroups.com or [@NTCIRDataSearch](https://twitter.com/NTCIR
 
 |                  |                                      |
 | ---------------- | ------------------------------------ |
-| **Jan 31, 2021** | [Dataset collections and training queries release](#data) |
+| **Jan 31, 2021** | [Dataset collections and training queries release](/data) |
 | **Aug 31, 2021** | Registration due and test queries release |
 | **Sep 30, 2021** | Submission due for the IR subtask |
 | **Nov 31, 2021** | Evaluation results release for the retrieval subtask |
