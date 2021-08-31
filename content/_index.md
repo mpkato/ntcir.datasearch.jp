@@ -37,18 +37,17 @@ data-search-org@googlegroups.com or [@NTCIRDataSearch](https://twitter.com/NTCIR
 |                  |                                      |
 | ---------------- | ------------------------------------ |
 | **Jan 31, 2021** | [Dataset collections and training queries release](/data) |
-| **Aug 31, 2021** | Registration due and test queries release |
-| **Sep 30, 2021** | Submission due for the IR subtask |
-| **Nov 31, 2021** | Evaluation results release for the retrieval subtask |
+| <del>**Aug 31, 2021**</del> **Sep 30, 2021** | Registration due and test queries release |
+| <del>**Sep 30, 2021**</del> **Oct 31, 2021** | Submission due for the IR subtask |
+| <del>**Nov 31, 2021**</del> **Nov 30, 2021** | Evaluation results release for the retrieval subtask |
 | **Feb 1, 2022** | Submission due for the QA and UI subtasks |
 
 <div style="height: 1em"></div>
 
 ## Registration
 
-Please visit (NOT READY) ,
-and take a look at *What participants must do*.
-Then, go to (NOT READY) for registration.
+Please take a look at [What participants must do](http://research.nii.ac.jp/ntcir/ntcir-16/obligations.html).
+Then, go to http://research.nii.ac.jp/ntcir/ntcir-16/howto.html and follow the registration instruction.
 The registration is necessary for participants to submit their runs.
 
 ---
