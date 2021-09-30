@@ -10,7 +10,11 @@ Ranked lists will be evaluated in a similar way to traditional ad-hoc retrieval 
 
 # Queries
 
-A new query list will be provided to participants in Data Search 2.
+Participants are expected to retrieve datasets for each test query in the following files:
+- English
+  - `data_search_2_e_test_topics.tsv`
+- Japanese
+  - `data_search_2_j_test_topics.tsv`
 
 Queries and qrels in NTCIR-15 Data Search can be used as training data in this round.
 More specifically, we recommend to use the following files for training in Data Search 2:
