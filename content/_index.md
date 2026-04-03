@@ -52,6 +52,28 @@ The registration is necessary for participants to submit their runs.
 
 ---
 
+# Data & Tools
+
+<a name="data"></a>
+
+## Data
+
+All the data are available at [NTCIR Data Search Test Collection](/data/).
+
+<br>
+
+## Tools
+
+A tool for producing baseline runs.
+
+[![mpkato/ntcir-datasearch - GitHub](/ntcir-datasearch.svg)](https://github.com/mpkato/ntcir-datasearch)
+
+A tool for reproducing relevance judgments conducted in NTCIR-15 Data Search.
+
+[![mpkato/ntcir-datasearch-evalscripts - GitHub](/ntcir-datasearch-evalscripts.svg)](https://github.com/mpkato/ntcir-datasearch-evalscripts)
+
+---
+
 # Subtasks
 
 <a name="tasks"></a>
