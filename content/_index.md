@@ -29,7 +29,7 @@ QA subtask and UI subtask.
 ---
 
 ## Contact
-data-search-org@googlegroups.com or [@NTCIRDataSearch](https://twitter.com/NTCIRDataSearch) 
+data-search-org@googlegroups.com
 
 
 ## Schedule
