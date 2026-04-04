@@ -216,7 +216,7 @@ Thus, search systems cannot access to the topics for which queries are generated
 
 ## Data
 
-All the data are available at [NTCIR-15 Data Search Test Collection](/data/) (see README.md).
+All the data are available at [NTCIR-15 Data Search Test Collection](https://huggingface.co/datasets/mpkato/ntcir_data_search) (see README.md).
 Relevance judgments for training queries was also released on May 13, 2020.
 
 <br>

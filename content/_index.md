@@ -36,7 +36,7 @@ data-search-org@googlegroups.com
 
 |                  |                                      |
 | ---------------- | ------------------------------------ |
-| **Jan 31, 2021** | [Dataset collections and training queries release](/data) |
+| **Jan 31, 2021** | [Dataset collections and training queries release](https://huggingface.co/datasets/mpkato/ntcir_data_search) |
 | <del>**Aug 31, 2021**</del> **Sep 30, 2021** | Registration due and test queries release |
 | <del>**Sep 30, 2021**</del> **Oct 31, 2021** | Submission due for the IR subtask |
 | <del>**Nov 31, 2021**</del> **Nov 30, 2021** | Evaluation results release for the retrieval subtask |
@@ -58,7 +58,7 @@ The registration is necessary for participants to submit their runs.
 
 ## Data
 
-All the data are available at [NTCIR Data Search Test Collection](/data/).
+All the data are available at [NTCIR Data Search Test Collection](https://huggingface.co/datasets/mpkato/ntcir_data_search).
 
 <br>
 

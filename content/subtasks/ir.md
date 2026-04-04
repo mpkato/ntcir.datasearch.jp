@@ -31,7 +31,7 @@ and `data_search_*_test_topics.tsv`,
 and `data_search_2_*_train_qrels.txt` is a union of `data_search_*_train_qrels.txt`
 and `data_search_*_all_qrels.txt`.
 
-These files are available at [Data Search Test Collection](/data/).
+These files are available at [Data Search Test Collection](https://huggingface.co/datasets/mpkato/ntcir_data_search).
 
 
 # Dataset Collections
@@ -44,7 +44,7 @@ Participants are expected to retrieve datasets from:
   - `data_search_j_collection.jsonl.bz2` (metadata) 
   - `data_search_j_data.tar.bz2` (data files) 
 
-These files are available at [Data Search Test Collection](/data/).
+These files are available at [Data Search Test Collection](https://huggingface.co/datasets/mpkato/ntcir_data_search).
 
 
 # Evaluation

@@ -32,7 +32,7 @@ Participants are expected to find answers from:
   - `data_search_j_collection.jsonl.bz2` (metadata) 
   - `data_search_j_data.tar.bz2` (data files) 
 
-These files are available at [Data Search Test Collection](/data/).
+These files are available at [Data Search Test Collection](https://huggingface.co/datasets/mpkato/ntcir_data_search).
 
 # Evaluation
 

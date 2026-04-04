@@ -22,7 +22,7 @@ Participants are expected to build a search system with:
   - `data_search_j_collection.jsonl.bz2` (metadata) 
   - `data_search_j_data.tar.bz2` (data files) 
 
-These files are available from [Data Search Test Collection](/data/).
+These files are available from [Data Search Test Collection](https://huggingface.co/datasets/mpkato/ntcir_data_search).
 
 
 # Evaluation
